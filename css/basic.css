@@ -1,0 +1,101 @@
+@charset "UTF-8";
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/********* layout *************/
+
+#contbody_scroll {
+    overflow: hidden;
+}
+#wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height:100vh;
+    position: relative;
+}
+header {height:45px;}
+#conWrap { 
+    display: flex; 
+    flex-direction: column;  
+    height:calc(100vh - 145px);}
+    #com_up {display: flex; flex: 2;}
+        .s1-1 {flex: 1;}
+        .com_up_r {
+            flex: 1;  
+            display: flex; 
+            flex-direction: column;}
+            .s1-2 {flex: 1; }
+            .s1-3 {flex: 1; }
+    #com_down {flex: 1; display: flex;}
+        .s2-1 {flex: 1;}
+        .s2-2 {flex: 1;}
+    footer {height:100px;}
+
+
+/********* color *************/
+
+header {background:#33353F; color:#fff;}
+#conWrap {padding: 6px;}
+#conWrap section {display: table;}
+#conWrap section a {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;}
+    #com_up {padding-bottom: 3px;}
+        .s1-1 a {background:#4AB8BC;}
+        .s1-1 {padding-right: 3px;}
+        .com_up_r {padding-left: 3px;}
+            .s1-2 a {background: #589DD2;}
+            .s1-2 {padding-bottom: 3px;}
+            .s1-3 {padding-top: 3px;}
+            .s1-3 a {background: #FF912F;}
+    #com_down {padding-top: 3px;}
+        .s2-1 a {background:#589DD2;}
+        .s2-1 {padding-right: 3px;}
+        .s2-2 {padding-left: 3px;}
+        .s2-2 a {background: #8DCA35;}
+    footer {    
+    background:#222222;
+    color:#fff;
+}
+
+#conWrap img {
+    transform: scale(0.5);
+}
+header img {
+    height: 45px;
+}
+header {
+    width: 100%;
+    padding: 0 45px;
+    }
+#lnb_btn {
+    position: relative;
+    left: -45px;
+    float: left;
+    z-index: 11;
+}
+.logo {
+    width: 100%;
+    text-align: center;
+    float: left;
+    margin: 0 -45px;
+}
+.search_btn {
+    float: right;
+    position: relative;
+    left: 45px;
+}
+
+
+/************** slider ******************/
+
+#lnb { position:fixed; top:0; left:-274px; width:274px; height:100%; z-index:100; background:#F1F1F1;}
+#lnb img {width:100% } 
+.lnb_login { background:#111; color:#fff; padding:35px 20px 35px 25px}
+.lnb_login p { font-size:14px; line-height:1.4; padding-bottom:20px; }
+
+.lnb_list { border-bottom:1px solid #ddd;}
+.lnb_res { padding:40px 20px 0 20px }
+
+.cover { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:10;}
